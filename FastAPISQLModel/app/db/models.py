@@ -1,6 +1,5 @@
 from typing import Optional, Dict
-from sqlalchemy import Column, String, PrimaryKeyConstraint, UniqueConstraint, \
-    TEXT, JSON
+from sqlalchemy import Column, String, PrimaryKeyConstraint, UniqueConstraint, TEXT, JSON
 from sqlmodel import Field
 
 from datetime import datetime

@@ -3,9 +3,9 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
-# import sys
-#
-# sys.path.append("..")
+import sys
+
+sys.path.append("..")
 from app.conf import ProjectSettings
 from app.routes import api_router
 
