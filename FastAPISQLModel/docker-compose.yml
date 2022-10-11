@@ -8,3 +8,25 @@ services:
       - "8088:80"
     volumes:
       - "/home/user/docker_data/:/var/data"
+    networks:
+      - fastapinetwork
+  
+  fastapidb:
+    image: postgres:13.4-alpine
+    container_name: db
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      # - POSTGRES_DB=scidatamanager
+    networks:
+      - fastapinetwork
+    ports:
+      - 5432:5432
+networks:
+  fastapinetwork:
+    driver: bridge
+
+volumes:
+  postgres_data:

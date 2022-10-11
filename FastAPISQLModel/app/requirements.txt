@@ -12,3 +12,4 @@ async-generator
 async-exit-stack
 async-generator
 uuid==1.30
+sqlmodel

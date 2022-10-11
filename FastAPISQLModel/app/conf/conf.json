@@ -21,10 +21,10 @@
   },
   "DATABASE_CONF": {
     "DATABASE": "postgresql",
-    "POSTGRES_SERVER": "localhost",
+    "POSTGRES_SERVER": "fastapidb",
     "POSTGRES_PORT": "5432",
-    "POSTGRES_USER": "",
-    "POSTGRES_PASSWORD": "",
+    "POSTGRES_USER": "postgres",
+    "POSTGRES_PASSWORD": "postgres",
     "POSTGRES_DB": "postgres",
     "POSTGRES_ADAPTER": "psycopg2"
   }
